@@ -10,33 +10,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d2a227c-f37c-4576-b49f-e7f2b6cb64c6" name="Changes" comment="commit msg">
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LessonUnknwn(Drop list)/src/main/java/org/example/config/MySpringMvcDispatcherServletInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LessonUnknwn(Drop list)/src/main/java/org/example/config/SpringConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LessonUnknwn(Drop list)/src/main/java/org/example/controllers/AdminController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LessonUnknwn(Drop list)/src/main/java/org/example/controllers/PeopleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LessonUnknwn(Drop list)/src/main/java/org/example/dao/PersonDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LessonUnknwn(Drop list)/src/main/java/org/example/models/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LessonUnknwn(Drop list)/src/main/webapp/WEB-INF/views/adminPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LessonUnknwn(Drop list)/src/main/webapp/WEB-INF/views/people/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LessonUnknwn(Drop list)/src/main/webapp/WEB-INF/views/people/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LessonUnknwn(Drop list)/src/main/webapp/WEB-INF/views/people/new.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LessonUnknwn(Drop list)/src/main/webapp/WEB-INF/views/people/show.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LessonUnknwn(Drop list)/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bf8eba33-3214-4916-affa-ca2e22844911.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/bf8eba33-3214-4916-affa-ca2e22844911.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bf8eba33-3214-4916-affa-ca2e22844911/storage_v2/_src_/database/first_db.bWA53w/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/bf8eba33-3214-4916-affa-ca2e22844911/storage_v2/_src_/database/first_db.bWA53w/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCrudAppWithHibernate(2)/src/main/java/org/example/config/MySpringMvcDispatcherServletInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCrudAppWithHibernate(2)/src/main/java/org/example/config/SpringConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCrudAppWithHibernate(2)/src/main/java/org/example/controllers/PeopleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCrudAppWithHibernate(2)/src/main/java/org/example/models/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCrudAppWithHibernate(2)/src/main/resources/hibernate.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCrudAppWithHibernate(2)/src/main/webapp/WEB-INF/views/people/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCrudAppWithHibernate(2)/src/main/webapp/WEB-INF/views/people/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCrudAppWithHibernate(2)/src/main/webapp/WEB-INF/views/people/new.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCrudAppWithHibernate(2)/src/main/webapp/WEB-INF/views/people/show.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringCrudAppWithHibernate(2)/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/repositories/PeopleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/services/PeopleService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson10(Full CRUD simple app)/src/main/java/org/example/controllers/PeopleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson10(Full CRUD simple app)/src/main/java/org/example/controllers/PeopleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson11(Validation)/src/main/java/org/example/controllers/PeopleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson11(Validation)/src/main/java/org/example/controllers/PeopleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson12,13(Defence from sql injection using Prepared Statement+connection to db)/src/main/java/org/example/controllers/PeopleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson12,13(Defence from sql injection using Prepared Statement+connection to db)/src/main/java/org/example/controllers/PeopleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson14(Db config from file prop)/src/main/java/org/example/controllers/PeopleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson14(Db config from file prop)/src/main/java/org/example/controllers/PeopleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson15(Batch update test)/src/main/java/org/example/controllers/BatchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson15(Batch update test)/src/main/java/org/example/controllers/BatchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson15(Batch update test)/src/main/java/org/example/controllers/PeopleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson15(Batch update test)/src/main/java/org/example/controllers/PeopleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson7(First CRUD type app)/src/main/java/org/example/controllers/PeopleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson7(First CRUD type app)/src/main/java/org/example/controllers/PeopleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson9(CRUD create @ModelAttribute)/src/main/java/org/example/controllers/PeopleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson9(CRUD create @ModelAttribute)/src/main/java/org/example/controllers/PeopleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LessonUnknwn(Drop list)/src/main/java/org/example/controllers/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/LessonUnknwn(Drop list)/src/main/java/org/example/controllers/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LessonUnknwn(Drop list)/src/main/java/org/example/controllers/BatchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/LessonUnknwn(Drop list)/src/main/java/org/example/controllers/BatchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LessonUnknwn(Drop list)/src/main/java/org/example/controllers/PeopleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/LessonUnknwn(Drop list)/src/main/java/org/example/controllers/PeopleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCRUDAppWithHibernate(1)/src/main/java/org/example/controllers/PeopleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringCRUDAppWithHibernate(1)/src/main/java/org/example/controllers/PeopleController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/config/SpringConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controllers/BatchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/LessonUnknwn(Drop list)/src/main/java/org/example/controllers/BatchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/PersonDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/PersonMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/LessonUnknwn(Drop list)/src/main/resources/database.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/database.properties.origin" beforeDir="false" afterPath="$PROJECT_DIR$/LessonUnknwn(Drop list)/src/main/resources/database.properties.origin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/batch/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/LessonUnknwn(Drop list)/src/main/webapp/WEB-INF/views/batch/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controllers/PeopleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controllers/PeopleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringCrudAppWithHibernate(2)/src/main/java/org/example/dao/PersonDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +48,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -86,15 +89,15 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "F:/Programming/Projects/SpringTrainingsMVC/LessonUnknwn(Drop list)",
+    "last_opened_file_path": "F:/Programming/Projects/SpringTrainingsMVC/SpringCrudAppWithHibernate(2)",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.37586206",
     "spring.configuration.checksum": "6df1663d7a128872253e8986fe34aad3",
     "vue.rearranger.settings.migration": "true"
   },
@@ -106,11 +109,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Programming\Projects\SpringTrainingsMVC\SpringCrudAppWithHibernate(2)" />
+      <recent name="F:\Programming\Projects\SpringTrainingsMVC\SpringCRUDAppWithHibernate(1)" />
       <recent name="F:\Programming\Projects\SpringTrainingsMVC\LessonUnknwn(Drop list)" />
       <recent name="F:\Programming\Projects\SpringTrainingsMVC\Lesson15(Batch update test)" />
       <recent name="F:\Programming\Projects\SpringTrainingsMVC\src\main\webapp\WEB-INF\views\batch" />
-      <recent name="F:\Programming\Projects\SpringTrainingsMVC\Lesson14(Db config from file prop)" />
-      <recent name="F:\Programming\Projects\SpringTrainingsMVC\Lesson13(Defence from sql injection using Prepared Statement)" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.example.controller" />
@@ -239,7 +242,7 @@
       <workItem from="1674990300276" duration="57000" />
       <workItem from="1675085531093" duration="1822000" />
       <workItem from="1675091726858" duration="629000" />
-      <workItem from="1675346183025" duration="1301000" />
+      <workItem from="1675346183025" duration="5067000" />
     </task>
     <task id="LOCAL-00001" summary="commit msg">
       <created>1674738077212</created>
@@ -304,7 +307,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674908166848</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="commit msg">
+      <created>1675347831581</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1675347831581</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

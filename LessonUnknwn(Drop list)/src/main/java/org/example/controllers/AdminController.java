@@ -1,6 +1,5 @@
 package org.example.controllers;
 
-import org.example.dao.PersonDAO;
 import org.example.models.Person;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

@@ -19,7 +19,7 @@ public class PersonDAO {
         this.sessionFactory = sessionFactory;
     }
 
-    @Transactional
+    @Transactional(readOnly = true)
     public List<Person> index() {
         Session session = sessionFactory.getCurrentSession();
         //here we write usual hibernate code
@@ -27,17 +27,28 @@ public class PersonDAO {
         return people;
     }
 
+    @Transactional(readOnly = true)
     public Person show(int id) {
-        return null;
+        Session session =sessionFactory.getCurrentSession();
+        return  session.get(Person.class,id);
     }
 
+    @Transactional
     public void save(Person person) {
+        Session session =sessionFactory.getCurrentSession();
+        session.save(person);
     }
 
     public void update(int id, Person person) {
+        Session session = sessionFactory.getCurrentSession();
+        session.get(Person.class,id);
+        session.update(person);
     }
 
     public void delete(int id) {
+        Session session = sessionFactory.getCurrentSession();
+        Person person = session.get(Person.class,id);
+        session.remove(person);
 
     }
 
