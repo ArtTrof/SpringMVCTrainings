@@ -6,10 +6,6 @@ import org.springframework.context.annotation.*;
 import org.springframework.core.env.Environment;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
-import org.springframework.orm.hibernate5.HibernateTransactionManager;
-import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
-import org.springframework.transaction.PlatformTransactionManager;
-import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ViewResolverRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
@@ -19,13 +15,11 @@ import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 
 import javax.sql.DataSource;
 import java.util.Objects;
-import java.util.Properties;
 
 @Configuration
 @ComponentScan("org.example")
 @EnableWebMvc
-@PropertySource("classpath:hibernate.properties")
-@EnableTransactionManagement
+@PropertySource("classpath:database.properties")
 public class SpringConfig implements WebMvcConfigurer {
     private final ApplicationContext applicationContext;
     private final Environment environment;
@@ -63,41 +57,15 @@ public class SpringConfig implements WebMvcConfigurer {
     @Bean
     public DataSource dataSource(){
         DriverManagerDataSource driverManagerDataSource = new DriverManagerDataSource();
-        driverManagerDataSource.setDriverClassName(environment.getRequiredProperty("hibernate.driver_class"));
-        driverManagerDataSource.setUrl(environment.getRequiredProperty("hibernate.connection.url"));
-        driverManagerDataSource.setUsername(environment.getRequiredProperty("hibernate.connection.username"));
-        driverManagerDataSource.setPassword(environment.getRequiredProperty("hibernate.connection.password"));
+        driverManagerDataSource.setDriverClassName(Objects.requireNonNull(environment.getProperty("driver")));
+        driverManagerDataSource.setUrl(environment.getProperty("url"));
+        driverManagerDataSource.setUsername(environment.getProperty("user_name"));
+        driverManagerDataSource.setPassword(environment.getProperty("password"));
         return driverManagerDataSource;
     }
 
-    private Properties hibernateProperties() {
-        Properties properties = new Properties();
-        properties.put("hibernate.dialect", environment.getRequiredProperty("hibernate.dialect"));
-        properties.put("hibernate.show_sql", environment.getRequiredProperty("hibernate.show_sql"));
-
-        return properties;
-    }
-
     @Bean
-    public LocalSessionFactoryBean sessionFactory() {
-        LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
-        sessionFactory.setDataSource(dataSource());
-        sessionFactory.setPackagesToScan("org.example.models");
-        sessionFactory.setHibernateProperties(hibernateProperties());
-
-        return sessionFactory;
+    public JdbcTemplate jdbcTemplate(){
+        return new JdbcTemplate(dataSource());
     }
-
-    @Bean
-    public PlatformTransactionManager hibernateTransactionManager() {
-        HibernateTransactionManager transactionManager = new HibernateTransactionManager();
-        transactionManager.setSessionFactory(sessionFactory().getObject());
-
-        return transactionManager;
-    }
-
-//    @Bean
-//    public JdbcTemplate jdbcTemplate(){
-//        return new JdbcTemplate(dataSource());
-//    }
 }
