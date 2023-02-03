@@ -3,7 +3,7 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.45">
     <root id="1">
       <DateStyle>dmy</DateStyle>
-      <IntrospectionStateNumber>2061</IntrospectionStateNumber>
+      <IntrospectionStateNumber>2069</IntrospectionStateNumber>
       <ServerVersion>15.1</ServerVersion>
       <StartupTime>1675102807</StartupTime>
       <TimeZones>true ACDT
@@ -800,7 +800,7 @@ false Zulu
 13183||10|C|G
 13183||-9223372036854775808|U|G
 13183||10|U|G</Grants>
-      <IntrospectionStateNumber>2061</IntrospectionStateNumber>
+      <IntrospectionStateNumber>2069</IntrospectionStateNumber>
       <ObjectId>16398</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -4237,7 +4237,7 @@ false Zulu
     <schema id="266" parent="2" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>2061</IntrospectionStateNumber>
+      <IntrospectionStateNumber>2069</IntrospectionStateNumber>
       <ObjectId>2200</ObjectId>
       <StateNumber>518</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
@@ -4262,7 +4262,7 @@ false Zulu
     </table>
     <table id="270" parent="266" name="person">
       <ObjectId>24860</ObjectId>
-      <StateNumber>2060</StateNumber>
+      <StateNumber>2068</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
@@ -4363,7 +4363,13 @@ false Zulu
       <StateNumber>2060</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <index id="284" parent="270" name="person_pkey">
+    <column id="284" parent="270" name="mood">
+      <DasType>varchar(100)|0s</DasType>
+      <Position>8</Position>
+      <StateNumber>2068</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="285" parent="270" name="person_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>24866</ObjectId>
@@ -4372,7 +4378,7 @@ false Zulu
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <index id="285" parent="270" name="person_email_key">
+    <index id="286" parent="270" name="person_email_key">
       <ColNames>email</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>24868</ObjectId>
@@ -4383,14 +4389,14 @@ false Zulu
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <key id="286" parent="270" name="person_pkey">
+    <key id="287" parent="270" name="person_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>24867</ObjectId>
       <Primary>1</Primary>
       <StateNumber>2053</StateNumber>
       <UnderlyingIndexId>24866</UnderlyingIndexId>
     </key>
-    <key id="287" parent="270" name="person_email_key">
+    <key id="288" parent="270" name="person_email_key">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>24869</ObjectId>
       <StateNumber>2053</StateNumber>
